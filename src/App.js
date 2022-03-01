@@ -48,14 +48,17 @@ class App extends Component {
         try {
             this.setState({
                 
-                result: (eval(checkResult) || "" ) + ""
+                result: (eval(checkResult))
             })
         } catch (e) {
+            
+
             this.setState({
                 result: "error"
             })
 
         }
+    
     };
 
     reset = () => {
